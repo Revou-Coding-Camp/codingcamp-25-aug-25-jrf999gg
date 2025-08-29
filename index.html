@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TZ Tech - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">TZ</div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="our-profile.html">Our Profile</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="index.html#contact-form">Message Us</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-bg">
+      <div class="hero-content">
+        <h2 id="welcome">
+          Hai! <span id="user-name">Friend</span>,
+          <br />
+          <span class="highlights">Welcome</span> To TZ Tech
+        </h2>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Trusted by Clients</h2>
+        <br />
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <p>
+              "TZ Tech transformed our legacy system into a modern, cloud-native
+              platform. Professional and deeply technical."
+            </p>
+            <strong>— Budi Santoso, CTO at MedikaHealth</strong>
+          </div>
+          <div class="testimonial">
+            <p>
+              "Delivered our MVP in just 8 weeks. Quality exceeded expectations.
+              Highly recommended!"
+            </p>
+            <strong>— Lina Wijaya, Founder at ShopEasy.id</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-item"><strong>75+</strong> Projects</div>
+      <div class="stat-item"><strong>30+</strong> Clients</div>
+      <div class="stat-item"><strong>99.9%</strong> Uptime</div>
+      <div class="stat-item"><strong>24/7</strong> Support</div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" id="contact-form">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <div class="form-container">
+          <form id="messageForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Your message here..."
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+          <button
+            type="submit"
+            onclick="clearAllMessages()"
+            class="delete-btn"
+          >
+            Clear All Messages
+          </button>
+        </div>
+        <div class="output" id="output"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 TZ Tech. All rights reserved. | Created by JR_Nova</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
